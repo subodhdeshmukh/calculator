@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="msg"></p>
+    <div class="calculator">
+        <form action="" name="form">
+            <input type="text" name="io" id="io">
+            
+            <div class="row mt">
+                <input type="button" name="7" id="7" value="7" onclick="seven(7)">
+                <input type="button" name="8" id="8" value="8" onclick="eight(8)">
+                <input type="button" name="9" id="9" value="9" onclick="nine(9)">
+                <input type="button" name="sub" id="sub" value="-" onclick="subtraction('-')">
+            </div>
+    
+            <div class="row">
+                <input type="button" name="4" id="4" value="4" onclick="four(4)">
+                <input type="button" name="5" id="5" value="5" onclick="five(5)">
+                <input type="button" name="6" id="6" value="6" onclick="six(6)">
+                <input type="button" name="add" id="add" value="+" onclick="addition('+')">
+            </div>
+            <div class="row">
+                <input type="button" name="1" id="1" value="1" onclick="one(1)">
+                <input type="button" name="2" id="2" value="2" onclick="two(2)">
+                <input type="button" name="3" id="3" value="3" onclick="three(3)">
+                <input type="button" name="div" id="div" value="/" onclick="division('/')">
+            </div>
+            <div class="row mb">
+                <input type="reset" value="C" id="reset">
+                <input type="button" name="0" id="0" value="0" onclick="zero(0)">
+                <input type="button" name="result" id="result" value="=" onclick="results()">
+                <input type="button" name="mul" id="mul" value="*" onclick="multiplication('*')">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

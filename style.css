@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    box-shadow: -2px -2px 5px rgb(195, 195, 195),2px 2px 5px grey;
+    /* box-shadow: 2px 2px 5px linear-gradient(to left, #743ad5, #d53a9d);; */
+    width: 30%;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+}
+p{
+    color: red;
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: 30px auto 0 auto;
+    font-size: 25px;
+    transition: 0.5s;
+    /* animation: msg 5s linear  alternate; */
+}
+/* @keyframes msg{
+    0%{width: 0%;}
+    25%{width: 25%;}
+    50%{width: 50%;}
+    75%{width: 75%;}
+    100%{width: 100%;}
+} */
+
+.calculator #io{
+    width: 100%;
+    height: 100px;
+    border: 0;
+    outline: 0;
+    /* border-bottom: 1px solid grey;    */
+    font-size: 30px;
+    background-color: #1a9efb;
+    color: white;
+}
+/* .calculator input[type="text"]{
+    padding-left: 5px;
+} */
+.calculator .row{
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.mt{
+    margin-top: 10px;
+} 
+.mb{
+    margin-bottom: 20px;
+}
+.calculator .row input{
+    padding: 15px 25px;
+    text-align: center;
+    align-self: center;
+    /* max-width: 50px; */
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    outline: 0;
+    border: 0;
+    font-size: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(146, 146, 146),-2px -2px 3px rgb(146, 146, 146);
+    transition: 0.5s;
+}
+#add,#sub,#div, #mul{
+    background-color: #1a9efb;
+    color: wheat;
+}
+#reset{
+    background-color: orange;
+    color: white;
+}
+#result{
+    background-color: #36c736;
+    color: white;
+}
+.calculator .row input:hover{
+    background-color: rgb(201, 201, 201);
+    /* box-shadow: 2px 2px 4px rgb(146, 146, 146); */
+
+}
+
+#add:hover,#sub:hover,#div:hover, #mul:hover{
+    background-color: #004b81;
+}
+#reset:hover{
+    background-color: rgb(175, 114, 1);
+    color: white;
+}
+#result:hover{
+    background-color: #009200;
+    color: white;
+}
+
+
+
+
+
+
+
+
